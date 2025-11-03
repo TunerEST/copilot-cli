@@ -1,0 +1,37 @@
+{
+  "name": "@github/copilot",
+  "version": "0.0.353",
+  "description": "GitHub Copilot CLI - AI-powered coding assistance directly in your command line",
+  "main": "dist/index.js",
+  "bin": {
+    "copilot": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && cp src/*.js dist/ && chmod +x dist/cli.js",
+    "test": "node dist/cli.js",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "copilot",
+    "cli",
+    "ai",
+    "coding-assistant"
+  ],
+  "author": "GitHub",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TunerEST/copilot-cli.git"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ]
+}
